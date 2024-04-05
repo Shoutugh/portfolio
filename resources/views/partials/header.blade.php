@@ -14,8 +14,8 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
 
-    <nav x-data="{ isOpen: false }" class="bg-grey-100">
-        <div class="px-8 border mx-auto">
+    <nav x-data="{ isOpen: false }" class="bg-grey-100 px-10 py-5">
+        <div class="px-10 border mx-auto rounded-full">
             <div class="flex justify-between">
                 <!-- logo -->
                 <div>
@@ -36,13 +36,13 @@
                     <a class="py-5 px-2 text-gray-700 hover:text-gray-900" href="#">Insights</a>
                 </div>
                 <!-- Secondary Navigation -->
-                <div class="hidden md:flex items-center space-x-1">
+                <div class="hidden md:flex items-center space-x-1 uppercase">
                     <a class="py-5 px-3 text-gray-800 hover:text-gray-900" href="#">Login</a>
-                    <a class="py-2 px-3 bg-blue-700 hover:text-blue-100 text-blue-200 transition duration-300 rounded shadow"
+                    <a class="py-2 px-3 bg-blue-700 hover:text-blue-100 text-blue-200 transition duration-300 rounded-full shadow"
                         href="#">Signup</a>
                 </div>
                 <!-- Mobile Menu -->
-                <div class="md:hidden flex items-center">
+                <div class="md:hidden flex items-center ">
                     <button @click="isOpen = !isOpen" class="mobile-menu-button">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div x-show="isOpen" class="mobile-menu md:hidden uppercase">
+        <div x-show="isOpen" class="mobile-menu md:hidden uppercase py-5 ">
             <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Services</a>
             <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Projects</a>
             <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">About</a>
